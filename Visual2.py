@@ -94,7 +94,7 @@ class Seen(object):
                 if counter == 0:
                     for move in new_moves:
                         print(move)
-                        cube.moves(move)
+                        cube.faces = Cube3.moves(cube.faces, move)
                         event = pygame.event.get()
                         """loop = True
                         while loop:
